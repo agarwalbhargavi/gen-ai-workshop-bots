@@ -3,6 +3,13 @@ from groq import Groq
 
 st.set_page_config("BHARGAVI-AI Content Generator", layout="wide")
 st.title("📢 BHARGAVI-AI – Content Generator")
+col_img, col_title = st.columns([1, 5])
+
+st.image(
+    "https://sp.yimg.com/ib/th/id/OIP.BPRwAy_Kmot1UHCnmYE5BQAAAA?pid=Api&w=148&h=148&c=7&dpr=2&rs=1",
+    width=80
+)
+
 
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
